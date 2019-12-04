@@ -27,8 +27,11 @@ var routes = require("./controllers/burger-controller.js");
 
 app.use(routes);
 
-// Starts the server to begin listening
-app.listen(PORT, function () {
-  console.log("App listening on PORT " + PORT);
-  console.log("Server listening on: http://localhost:" + PORT);
+// Syncing our sequelize models and then starting our Express app
+// =============================================================
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+    console.log("Server listening on: http://localhost:" + PORT);
+  });
 });
