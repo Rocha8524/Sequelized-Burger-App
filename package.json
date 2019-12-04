@@ -1,0 +1,32 @@
+{
+  "name": "Sequelized-Burger-App",
+  "version": "1.0.0",
+  "description": "Sequelized Version of Eat-Da-Burger Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rocha8524/Sequelized-Burger-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rocha8524/Sequelized-Burger-App/issues"
+  },
+  "homepage": "https://github.com/Rocha8524/Sequelized-Burger-App#readme",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "method-override": "^3.0.0",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.0.1",
+    "parser": "^0.1.4",
+    "path": "^0.12.7",
+    "sequelize": "^5.21.2"
+  }
+}
